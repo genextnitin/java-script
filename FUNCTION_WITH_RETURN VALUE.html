@@ -1,0 +1,28 @@
+<!-- FUNCTION WITH RETURN VALUE
+We can call function that returns a value and use it in our program. Let’s see the example of function that returns value. -->
+
+
+<html>
+   <head>  
+      <script type = "text/javascript">
+         function concatenate(first, last) {
+            var full;
+            full = first + last;
+            return full;
+         }
+         function secondFunction() {
+            var result;
+            result = concatenate('Zara', 'Ali');
+            document.write (result );
+         }
+      </script>      
+   </head>
+   
+   <body>
+      <p>Click the following button to call the function</p>      
+      <form>
+         <input type = "button" onclick = "secondFunction()" value = "Call Function">
+      </form>      
+      <p>Use different parameters inside the function and then try...</p>  
+  </body>
+</html>

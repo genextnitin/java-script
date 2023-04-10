@@ -1,0 +1,18 @@
+<!-- Warning for Non-JavaScript Browsers
+If you have to do something important using JavaScript, then you can display a warning message to the user using <noscript> tags.
+You can add a noscript block immediately after the script block as follows – -->
+
+<html>
+   <body>
+      <script language = "javascript" type = "text/javascript">
+         <!--
+            document.write("Hello World!")
+         //-->
+      </script>
+      
+      <noscript>
+         Sorry...JavaScript is needed to go ahead.
+      </noscript>      
+   </body>
+</html>
+<!-- Now, if the user's browser does not support JavaScript or JavaScript is not enabled, then the message from </noscript> will be displayed on the screen. -->

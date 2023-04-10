@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<style type="text/css">
+#error{ color: red; }
+</style>
+<script type="text/javascript">
+function validate()
+{
+var x = document.facebook.fname.value;
+
+if(isNaN(x) || x=="")
+{		 document.getElementById('error').innerHTML="Enter Numeric value only";
+return false;
+}
+else
+{
+return true;
+}
+	 }
+</script>
+</head>
+<body>

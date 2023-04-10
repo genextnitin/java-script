@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<script type="text/javascript">
+ function validate()
+{
+var name = document.facebook.fname.value;
+var password = document.facebook.pwd.value;
+
+if(name == "")
+{
+document.getElementById('error').innerHTML = "Name Can't Be Blank";
+return false;
+}
+if(password.length<8)
+{
+alert("password must be 8 character long");
+return false;
+}
+ }
+</script>
+</head>
+<body>
+   <form name="facebook" method="get" action="first.html" onsubmit=" return validate();">
+   <input type="text" name="fname" placeholder="Enter Name">  <span id="error">  </span><br><br>
+   <input type="password" name="pwd"> <br><br>
+   <input type="submit" name="submit" value="Register">
+      </form>
+</body>
+</html>
