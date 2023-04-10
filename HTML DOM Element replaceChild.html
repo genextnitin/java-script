@@ -1,0 +1,34 @@
+HTML DOM Element replaceChild()
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The Element Object</h1>
+<h2>The replaceChild() Method</h2>
+
+<ul id="myList">
+  <li>Genext</li>
+  <li>Crystal</li>
+  <li>IICA</li>
+</ul>
+
+<p>Click "Replace" to replace the first item in the the list.</p>
+
+<button onclick="myFunction()">"Replace"</button>
+
+<p>This example replaces the Text node "Coffee" with a Text node "Water". Replacing the entire li element is also an alternative.</p>
+
+<script>
+function myFunction() {
+// Select first child element:
+const element = document.getElementById("myList").children[0];
+
+// Create a new text node:
+const newNode = document.createTextNode("Water");
+
+// Replace the text node:
+element.replaceChild(newNode, element.childNodes[0]);
+}
+</script>
+
+</body>
+</html>

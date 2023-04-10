@@ -1,0 +1,26 @@
+Clone Element
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The Element Object</h1>
+<h2>The cloneNode() Method</h2>
+<button onclick="myFunction()">Copy</button>
+<p>Click "Copy" to copy the "demo" element, including all its attributes and child elements, and append it to the document.</p>
+
+<div id="demo" style="border:1px solid black;background-color:pink">
+  <p style="color:red; padding:10px">A p element</p>
+  <p style="color:green; padding:10px ">A p element</p>
+  <p style="color:blue; padding:10px ">A p element</p>
+</div>
+
+<script>
+function myFunction() {
+  const node = document.getElementById("demo");
+  const clone = node.cloneNode(true);
+  document.body.appendChild(clone);
+}
+</script>
+
+</body>
+</html>

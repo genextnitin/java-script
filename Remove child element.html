@@ -1,0 +1,27 @@
+<!-- Remove child element -->
+	
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The Element Object</h1>
+<h2>The removeChild() Method</h2>
+
+<p>Click "Remove" to remove the first item from the list:</p>
+<button onclick="myFunction()">Remove</button>
+
+<ul id="myList">
+  <li>Genext</li>
+  <li>IICA</li>
+  <li>Crystal</li>
+</ul>
+
+<script>
+function myFunction() 
+{
+  const list = document.getElementById("myList");
+  list.removeChild(list.firstElementChild);
+}
+</script>
+
+</body>
+</html>

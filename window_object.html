@@ -1,0 +1,103 @@
+<!-- WINDOW OBJECT
+The window object represents a window in browser. An object of window is created automatically by the browser.
+Window is the object of browser, it is not the object of javascript. The javascript objects are string, array, date etc.
+Methods of window object
+The important methods of window object are as follows:
+
+Method	Description
+Alert()	Display a alert box containing msg with ok button.
+Confirm()	displays the confirm dialog box containing message with ok and cancel button.
+Prompt()	displays a dialog box to get input from the user.
+Open()	Open the new window
+Close()	Close the current window
+setTimeout(fuction(){ } , time)	performs action after specified time like calling function, evaluating expressions etc.
+
+Example of alert() in javascript
+It displays alert dialog box. It has message and ok button. -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	 <script type="text/javascript">
+		function abc()
+		{  
+		alert("Hello Alert Box");  
+		}  
+		</script>
+
+		<input type="button" value="click" onclick="abc()"/>
+
+
+		<!-- ----------------------------------------- -->
+
+		<script type="text/javascript">
+			function abc()
+					{
+							var v = confirm("Are u sure?");  
+								if(v==true)
+									{
+									       alert("ok");  
+									}  
+								else
+									{
+									      alert("cancel");  
+									}  
+
+			        }  
+        </script>
+        <input type="button" value="delete" onclick="abc()"/>
+
+
+         <!-- ------------------------------------------- -->
+
+        <script type="text/javascript">
+			function msg()
+			  {  
+					var name= prompt("Who are you?");  
+					alert("I am "+name);  
+			  }  
+        </script>
+
+            <input type="button" value="click" onclick="msg()"/>
+
+
+         <!-- ------------------------------------------ -->
+
+        <script type="text/javascript">
+			function msg()
+					{  
+					        open("http://www.genextcomputer.com/");  
+					}  
+		</script>
+
+
+            <input type="button" value="genext" onclick="msg()"/>
+
+         <!-- ------------------------------------------- -->
+
+
+         <script type="text/javascript">
+		function msg()
+		{  
+		setTimeout(
+		function(){  
+		alert("Welcome to Javatpoint after 2 seconds")  
+		},2000);  
+		  }  
+		</script>
+		<input type="button" value="click" onclick="msg()"/>
+
+
+</body>
+</html>

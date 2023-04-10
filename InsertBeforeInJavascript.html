@@ -1,0 +1,28 @@
+Insert Before
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The Element Object</h1>
+<h2>The insertBefore() Method</h2>
+
+<ul id="myList">
+  <li>Genext</li>
+  <li>Crystal</li>
+</ul>
+
+<script>
+// Create a "li" element:
+const newNode = document.createElement("li");
+// Create a text node:
+const textNode = document.createTextNode("Rca");
+// Append text node to "li" element:
+newNode.appendChild(textNode);
+
+// Insert before existing child:
+const list = document.getElementById("myList");
+list.insertBefore(newNode, list.children[1]);
+</script>
+
+</body>
+</html>

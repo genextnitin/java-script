@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>	
+<head>
+<style>
+.example {
+  border: 1px solid black;
+  padding 8px;
+}
+</style>
+</head>
+<body>
+
+<h1>The Document Object</h1>
+<h2>The getElementsByClassName() Method</h2>
+
+<p>Change the background color of all elements with class="example":</p>
+
+<div class="example">
+A div with class="example"
+</div>
+<br>
+<div class="example">
+A div with class="example"
+</div>
+
+<p class="example">
+A p element with class="example".
+</p>
+
+<p>A <span class="example">span</span> element with class="example".</p>
+
+<script>
+const collection = document.getElementsByClassName("example");
+for (let i = 0; i < collection.length; i++) {
+  collection[i].style.backgroundColor = "red";
+}
+</script>
+
+</body>
+</html>

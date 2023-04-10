@@ -1,0 +1,32 @@
+Move item one list to other list
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Element Object</h1>
+<h2>The appendChild() Method</h2>
+
+<ul id="myList1">
+  <li>IICA</li>
+  <li>RCA</li>
+</ul>
+<ul id="myList2">
+  <li>Genext</li>
+  <li>Crystal</li>
+</ul>
+
+<p>Click "Move" to move an item from one list to another:</p>
+
+<button onclick="myFunction()">Move</button>
+
+<script>
+function myFunction() {
+  const node = document.getElementById("myList2").lastElementChild;
+
+  document.getElementById("myList1").appendChild(node);
+}
+</script>
+
+</body>
+</html>

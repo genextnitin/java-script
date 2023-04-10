@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> </title>
+</head>
+<body>
+
+	 <script type="text/javascript">
+           
+           const person = {
+							  firstName: "John",
+							  lastName: "Doe",
+							  language: "",
+							  set lang(lang) {
+							    this.language = lang;
+							  }
+							};
+
+				// Set an object property using a setter:
+				person.lang = "english";
+
+				// Display data from the object:
+				document.getElementById("demo").innerHTML = person.language;
+
+
+	 </script>
+
+</body>
+</html>

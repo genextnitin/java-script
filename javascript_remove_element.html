@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The Element Object</h1>
+<h2>The removeChild() Method</h2>
+
+<p>Click "Remove" to remove the first child (index 0)</p>
+<button onclick="myFunction()">Remove</button>
+
+<ul id="myList">
+  <li>Genext</li>
+  <li>RCA</li>
+  <li>IICA</li>
+</ul>
+
+
+<script>
+function myFunction() {
+  const list = document.getElementById("myList");
+  if (list.hasChildNodes()) {
+    list.removeChild(list.children[2]);
+  }
+}
+</script>
+
+</body>
+</html>

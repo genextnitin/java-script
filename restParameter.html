@@ -1,0 +1,32 @@
+<!-- Rest parameter
+
+Rest parameter is an improved way to handle function parameter, allowing us to more easily handle various input as parameters in a function. The rest parameter syntax allows us to represent an indefinite number of arguments as an array. With the help of a rest parameter a function can be called with any number of arguments, no matter how it was defined. Rest parameter is added in ES2015 or ES6 which improved the ability to handle parameter.
+// es6 rest parameter -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> </title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+function fun(...input)
+{
+	let sum = 0;
+	for(let i of input)
+            {
+		sum+=i;
+	}
+	return sum;
+}
+console.log(fun(1,2));    //3
+console.log(fun(1,2,3)); //6
+console.log(fun(1,2,3,4,5)); //15
+
+	</script>
+
+</body>
+</html>

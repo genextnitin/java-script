@@ -1,0 +1,31 @@
+
+Destructuring :-
+	
+Assignment is a JavaScript expression that allows to unpack values from arrays, or properties from objects, into distinct variables data can be extracted from arrays, objects, nested objects and assigning to variables. In Destructuring Assignment on the left-hand side defined that which value should be unpacked from the sourced variable.
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	 <script>
+var names = ["alpha", "beta", "gamma", "delta"];
+var [firstName, secondName] = names;	
+console.log(firstName);                      //"alpha"
+console.log(secondName);                   //"beta"
+                                                              //Both of the procedure are same
+var [firstName, secondName] = ["alpha", "beta", "gamma", "delta"];
+		
+console.log(firstName);                                    //"alpha"
+console.log(secondName);                             //"beta
+</script>
+
+</body>
+</html>

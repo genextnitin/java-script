@@ -1,0 +1,42 @@
+<!-- 
+JAVASCRIPT DATE OBJECT
+
+The JavaScript date object can be used to get year, month and day. You can display a timer on the webpage by the help of JavaScript date object. 
+JavaScript Date Methods
+The important methods of date object are as follows:
+Method	Description
+getFullYear()	Return the yr. in 4digit.EX.2017
+getMonth()	Return the month in 2 digit.
+EX.0to 11.
+getMonth()+1	Return th month in 2 digit. (upto 12)
+getDate()	Returns the date in1-2 digit from 1 to 31 
+getDay()	Returns the day of week in 1 digit 0 to 6
+getHours()	Returns all the element having the given name value
+getMinutes()	Returns  all the element having the given class name.
+getSeconds()	Returns all the element having the given class name.
+getMilliseconds	Returns all the element having the given tag name
+
+Date example:
+ -->
+
+<html>
+<body>
+         Current Date and Time: <span id="txt">    </span>  
+<script>  
+        var today=new Date();  
+        document.getElementById('txt').innerHTML = today;  
+</script>  
+
+
+<!-- <script>  
+var today=new Date();  
+var h=today.getHours();  
+var m=today.getMinutes();  
+var s=today.getSeconds();  
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;  
+</script>  --> 
+
+
+
+</body>
+</html>
