@@ -1,0 +1,22 @@
+<!-- Adding the addEventListener Method
+You can also add event listeners using a method called addEventListener. The EventTarget.addEventListener() method adds the specified EventListener-compatible object to the list of event listeners for the specified event type on the EventTarget on which it is called. -->
+
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <button id="eventBtn">Try it</button>
+
+    <p id="display">   </p>
+
+    <script>
+
+    document.getElementById("eventBtn").addEventListener("click", myFunction);
+
+    function myFunction() 
+    {
+        document.getElementById("display").innerHTML = "Its Worked !!";
+    }
+    </script>
+  </body>
+</html>

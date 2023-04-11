@@ -1,0 +1,28 @@
+<!-- Event with anonymous function -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+  <title>Events in JavaScript: Removing event listeners</title>
+</head>
+<body>
+  <button id="element">Click Me</button>
+<script>
+var user = 
+{
+ firstname: 'genext',
+ greeting: function(){
+   alert('My name is ' + this.firstname);
+ }
+};
+
+// Call the method with the correct
+// context inside an anonymouse function
+element.addEventListener('click', function() 
+{
+  user.greeting();
+});
+</script>
+</body>
+</html>

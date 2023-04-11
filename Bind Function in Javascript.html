@@ -1,0 +1,34 @@
+<!-- Bind Function -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+  <title>Events in JavaScript: Preserving callback context using bind</title>
+</head>
+<body>
+  <button id="element">Click Me</button>
+
+<script>
+          var element = document.getElementById('element');
+
+var user = 
+{
+ firstname: 'Genext',
+ greeting: function(){
+   alert('My name is ' + this.firstname);
+ }
+};
+
+// Overwrite the original function with
+// a new function with its execution
+// context 'bound' to the user object
+
+user.greeting = user.greeting.bind(user);
+
+// Add the bound function as the callback
+
+element.addEventListener('click', user.greeting);
+
+</script>
+</body>
+</html>
